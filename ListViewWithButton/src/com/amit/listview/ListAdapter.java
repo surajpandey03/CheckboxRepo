@@ -41,6 +41,7 @@ public class ListAdapter extends BaseAdapter {
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
+		System.out.println("inside getview");
 		View view = convertView;
 		if (view == null) {
 			view = lInflater.inflate(R.layout.item, parent, false);
